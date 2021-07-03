@@ -1,0 +1,6 @@
+@import "../../mixins/mixins.scss";
+
+.intro {
+  @include element_middle();
+//   background-color: teal;
+}
