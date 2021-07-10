@@ -1,0 +1,84 @@
+@import "../../mixins/mixins.scss";
+
+.sidenav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  width: max-content;
+  z-index: 10000;
+
+  .sidenav_contents {
+    background-color: whitesmoke;
+    height: 100%;
+    overflow-x: hidden;
+    outline: 1px solid black;
+    padding: 0.5em;
+    z-index: 1;
+  }
+  #is_hidden {
+    width: 0px;
+    padding: 0px;
+    transition: 1.5s;
+  }
+  #is_shown {
+    width: 100%;
+    transition: 1s;
+  }
+
+  // .arrow {
+  //   // @include element_middle();
+  //   position: fixed;
+  //   top: 0em;
+  //   left: 2em;
+  //   // background-color: whitesmoke;
+  //   border: 1px solid black;
+  //   // border-left: 0px solid;
+  //   padding: 1em 0.25em;
+
+  //   .chevron {
+  //     border-style: solid;
+  //     border-width: 0.25em 0.25em 0 0;
+  //     content: "";
+  //     display: inline-block;
+  //     height: 1em;
+  //     right: 0.15em;
+  //     position: relative;
+  //     top: 0.15em;
+  //     transform: rotate(45deg);
+  //     vertical-align: top;
+  //     width: 1em;
+  //   }
+
+  //   #is_hidden {
+  //     //   transform-origin: center;
+  //     width: 1em;
+  //     transform: rotate(225deg) translateX(-0.15em) translateY(0.15em);
+  //   }
+
+  //   #is_shown {
+  //     width: 1em;
+  //   }
+  // }
+  .arrow {
+    z-index: 0;
+  }
+  .is_hidden {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+  }
+  .is_shown {
+    visibility: hidden;
+  }
+  // }
+}
+
+@keyframes u_turn {
+  0% {
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

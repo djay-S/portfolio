@@ -1,14 +1,16 @@
 import "./App.scss";
 import Home from "./screens/home/home";
-import Intro from "./screens/intro/intro";
-import Skills from "./screens/skills/skills";
+import AboutMe from "./screens/aboutMe/aboutMe";
+import Projects from "./screens/projects/projects";
+import Sidenav from "./screens/sidenav/sidenav";
 
 function App() {
   return (
     <div className="App">
+      <Sidenav />
       <Home />
-      <Intro />
-      <Skills />
+      <AboutMe />
+      <Projects />
     </div>
   );
 }
