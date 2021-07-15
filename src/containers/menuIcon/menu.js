@@ -9,11 +9,11 @@ export default function Menu(props) {
   }, [props]);
   return (
     <div className="menu">
-      <span className={menuState.menuState}>
+      <div className={menuState.menuState}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
-      </span>
+      </div>
     </div>
   );
 }

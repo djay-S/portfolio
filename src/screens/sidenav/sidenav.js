@@ -21,9 +21,8 @@ export default function Sidenav() {
       <div className="sidenav_contents" id={id}>
         Sidenav
       </div>
-      <div className="menu">
+      <div className="sidenav_menu">
         <div className={menuState} onClick={toggleSideNav}>
-          {/* <Menu /> */}
           <Menu menuState={menuState} />
         </div>
       </div>
