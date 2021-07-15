@@ -1,0 +1,6 @@
+@import "../../mixins/mixins.scss";
+
+.contact_me {
+  @include element_middle();
+  //   background-color: yellow;
+}
