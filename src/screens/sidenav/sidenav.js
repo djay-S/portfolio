@@ -13,18 +13,19 @@ export default function Sidenav() {
     console.log("useEffect");
   }, [active]);
   const a = active ? "is_shown" : "is_hidden";
+  const menuState = active ? "close" : "open";
+  const menuClass = "menu " + menuState;
   let id = a;
   return (
     <div className="sidenav">
       <div className="sidenav_contents" id={id}>
         Sidenav
-        <span className="close" onClick={toggleSideNav}>
-          <Menu />
-        </span>
       </div>
-      <div className={"arrow " + id} onClick={toggleSideNav}>
-        {/* <span className="chevron" id={id}></span> */}
-        <Menu />
+      <div className="menu">
+        <div className={menuState} onClick={toggleSideNav}>
+          {/* <Menu /> */}
+          <Menu menuState={menuState} />
+        </div>
       </div>
     </div>
   );

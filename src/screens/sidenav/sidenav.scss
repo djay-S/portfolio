@@ -2,7 +2,7 @@
 
 .sidenav {
   display: flex;
-  align-items: center;
+  // align-items: center;
   position: fixed;
   inset: 0;
   height: 100vh;
@@ -38,5 +38,24 @@
   .is_shown {
     visibility: hidden;
   }
-}
 
+  .menu {
+    position: relative;
+    top: 1em;
+    left: 0.5em;
+
+    .close {
+      transition: 1s;
+    }
+  }
+
+  .close_menu {
+    position: relative;
+    opacity: 1;
+    top: 1em;
+    left: 0.5em;
+    .open {
+      opacity: 0;
+    }
+  }
+}
