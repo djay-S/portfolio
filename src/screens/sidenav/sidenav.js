@@ -17,12 +17,15 @@ export default function Sidenav() {
   const menuClass = "menu " + menuState;
   let id = a;
   return (
-    <div className="sidenav">
+    <div className="sidenav" id={id}>
       <div className="sidenav_contents" id={id}>
-        Sidenav
+        <div className="sections">Home</div>
+        <div className="sections">About Me</div>
+        <div className="sections">Projects</div>
+        <div className="sections">Contact Me</div>
       </div>
       <div className="sidenav_menu">
-        <div className={menuState} onClick={toggleSideNav}>
+        <div onClick={toggleSideNav}>
           <Menu menuState={menuState} />
         </div>
       </div>
