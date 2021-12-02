@@ -2,6 +2,8 @@ import React from "react";
 import "./projectContainer.scss";
 import logo from "../../assets/images/logo512.png";
 import { LoremIpsum } from "react-lorem-ipsum";
+import TechStack from "../techStack/techStack";
+import * as Constants from "../../constants/textConstants";
 
 export default function project() {
   return (
@@ -10,11 +12,15 @@ export default function project() {
       <div className="project_content">
         <div className="snapshot">
           <img src={logo} />
-          <div>Site Github</div>
+          <div>
+            <button>Site {Constants.NEW_TAB_UNICODE}</button>
+            <button>Github {Constants.GITHUB_UNICODE}</button>
+          </div>
         </div>
         <span className="vertical"></span>
         <div className="details">
           Details <LoremIpsum p={2} />
+          <TechStack tech={["java", "react", "css3", "javascript"]} />
         </div>
       </div>
     </div>
