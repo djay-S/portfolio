@@ -12,9 +12,22 @@ export default function project() {
       <div className="project_content">
         <div className="snapshot">
           <img src={logo} />
-          <div>
-            <button>Site {Constants.NEW_TAB_UNICODE}</button>
-            <button>Github {Constants.GITHUB_UNICODE}</button>
+          <div className="links">
+            <button>
+              {/* <span className="gg-external qwert"></span> */}
+              <span className="btn-text">
+                Site {Constants.NEW_TAB_UNICODE}
+                &nbsp;
+              </span>
+              <span className="gg-external"></span>
+            </button>
+            <button>
+              <span className="btn-text">
+                Github {Constants.GITHUB_UNICODE}
+                &nbsp;
+              </span>
+              <span className="gg-external"></span>
+            </button>
           </div>
         </div>
         <span className="vertical"></span>
