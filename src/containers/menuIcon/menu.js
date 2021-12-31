@@ -3,16 +3,29 @@ import "./menu.scss";
 
 export default function Menu(props) {
   const [menuState, setMenuState] = useState(props);
-  console.log(menuState, "menuState", props);
+  const [isMouseOver, setMouseOver] = useState(false);
+  // console.log(menuState, "menuState", props);
   useEffect(() => {
     setMenuState(props);
   }, [props]);
+
+  const handleMenuMouseOver = () => {
+    setMouseOver(true);
+  };
+
+  const handleMenuMouseOut = () => {
+    setMouseOver(false);
+  };
+
+  let mOClass = isMouseOver ? "point" : "";
   return (
     <div className="menu">
-      <div className={menuState.menuState}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+      <div
+        className={"box box-1 " + mOClass + " " + menuState.menuState}
+        onMouseOver={handleMenuMouseOver}
+        onMouseOut={handleMenuMouseOut}
+      >
+        <span className="manu-bar"></span>
       </div>
     </div>
   );

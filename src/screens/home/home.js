@@ -3,7 +3,7 @@ import "./home.scss";
 
 export default function home() {
   return (
-    <div className="home wrapper">
+    <div className="home wrapper" id="home">
       <h1>Home</h1>
       <div>
         <br />

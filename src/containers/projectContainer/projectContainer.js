@@ -14,7 +14,6 @@ export default function project() {
           <img src={logo} />
           <div className="links">
             <button>
-              {/* <span className="gg-external qwert"></span> */}
               <span className="btn-text">
                 Site {Constants.NEW_TAB_UNICODE}
                 &nbsp;

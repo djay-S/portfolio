@@ -5,7 +5,7 @@ import "./projects.scss";
 
 export default function projects() {
   return (
-    <div className="projects wrapper">
+    <div className="projects wrapper" id="projects">
       <div className="heading">
         <h1>Projects</h1>
       </div>

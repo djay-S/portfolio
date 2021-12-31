@@ -1,62 +1,91 @@
+.box {
+  // border: 1px solid black;
+  box-shadow: 0px 0px 100px 10px grey;
+  background: white;
+  aspect-ratio: 1;
+  width: 80%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  // background-color: hsl(0, 0, 80);
+}
+
+.manu-bar {
+  display: block;
+  position: relative;
+}
+
+.manu-bar,
+.manu-bar::before,
+.manu-bar::after {
+  padding: 0;
+  width: 2em;
+  height: 4px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+}
+
+.manu-bar::before,
+.manu-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.manu-bar::before {
+  bottom: 0.5em;
+}
+
+.manu-bar::after {
+  top: 0.5em;
+}
+
+.point {
+  .manu-bar {
+    width: 2.5em;
+  }
+
+  .manu-bar::before {
+    transform-origin: left;
+    transform: translate(0em, 0.6em) rotate(-45deg);
+    width: 1.5em;
+  }
+
+  .manu-bar::after {
+    transform-origin: left;
+    transform: translate(0em, -0.6em) rotate(45deg);
+    width: 1.5em;
+  }
+}
+
+.close {
+  .manu-bar {
+    width: 2.5em;
+  }
+
+  .manu-bar::after {
+    transform-origin: right;
+    transform: translate(1em, -0.4em) rotate(45deg);
+    width: 1.5em;
+  }
+
+  .manu-bar::before {
+    transform-origin: right;
+    transform: translate(1em, 0.4em) rotate(-45deg);
+    width: 1.5em;
+  }
+}
+
 .menu {
   position: relative;
   background-color: white;
-  height: 30px;
-  width: 30px;
+  width: 50px;
+  aspect-ratio: 1;
   padding: 5px;
-  border: 1px solid gray;
   border-radius: 5px;
-  .open {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    margin: 0 auto;
-    width: 80%;
-    .bar {
-      position: relative;
-      transition: 1s ease-in-out;
-      background-color: black;
-      height: 2px;
-      margin: 4px auto;
-      width: 80%;
-      //   width: 20px;
-    }
-    &:active {
-      transform: translateY(-50%) translateX(-50%) scale(0.8);
-    }
-  }
-
-  .close {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    margin: 0 auto;
-    width: 80%;
-    // width: 100%;
-    .bar {
-      background-color: black;
-      height: 2px;
-      margin: 4px;
-      //   width: 20px;
-      transition: 1s ease-in-out;
-    }
-    .bar:nth-child(2) {
-      transition: 1s ease-in-out;
-      opacity: 0;
-      width: 0px;
-      transform-origin: left center;
-      visibility: hidden;
-    }
-    .bar:nth-child(1) {
-      transform: rotate(45deg) translateY(4px) translateX(4px);
-    }
-    .bar:nth-child(3) {
-      transform: rotate(-45deg) translateY(-4px) translateX(5px);
-    }
-    &:active {
-      transform: translateY(-50%) translateX(-50%) scale(0.8);
-    }
-  }
 }

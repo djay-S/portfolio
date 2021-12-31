@@ -4,7 +4,7 @@ import "./aboutMe.scss";
 
 export default function about_me() {
   return (
-    <div className="about_me wrapper">
+    <div className="about_me wrapper" id="about">
       <div className="heading">
         <h1>About Me</h1>
       </div>

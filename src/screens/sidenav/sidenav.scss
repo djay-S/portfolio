@@ -2,12 +2,16 @@
 
 .sidenav {
   display: flex;
-  // align-items: center;
   position: fixed;
   inset: 0;
   height: 100vh;
+  min-height: -webkit-fill-available;
   width: max-content;
   z-index: 10000;
+
+  a {
+    text-decoration: none;
+  }
 
   .sidenav_contents {
     background-color: hsl(0, 1%, 21%);
@@ -18,6 +22,7 @@
     z-index: 1;
 
     .sections {
+      display: block;
       min-width: 8em;
       padding: 1em;
       font-weight: 500;
