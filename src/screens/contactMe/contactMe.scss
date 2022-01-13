@@ -20,11 +20,18 @@
 
   figure {
     display: inline-grid;
-  }
-  figcaption {
-    font-size: 1em;
-  }
 
+    figcaption {
+      font-size: 1em;
+      opacity: 0;
+    }
+
+    &:hover {
+      figcaption {
+        opacity: 1;
+      }
+    }
+  }
   .far,
   .fab {
     // color: red;
@@ -34,6 +41,21 @@
     transition: all 0.2s ease-in-out;
     &:hover {
       font-size: 7em;
+    }
+  }
+  #resume-caption {
+    // background-color: red;
+    cursor: pointer;
+    a {
+      text-emphasis: none;
+      text-decoration: none;
+      margin-left: 1em;
+      color: black;
+    }
+    @include element_middle();
+    font-size: 1em;
+    .far {
+      font-size: 1em;
     }
   }
 }

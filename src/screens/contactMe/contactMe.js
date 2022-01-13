@@ -64,7 +64,21 @@ export default function ContactMe() {
                 className="far fa-file"
                 onClick={() => handleExternalLink(PDF)}
               ></i>
-              <figcaption>Resumé</figcaption>
+              <figcaption>
+                Resumé <br />
+                <div id="resume-caption">
+                  <i
+                    onClick={() => {
+                      handleExternalLink(PDF);
+                    }}
+                  >
+                    <i class="far fa-eye"></i>
+                  </i>
+                  <a href={PDF} download="Dhananjay Singh Kushwaha.pdf">
+                    <i class="fas fa-file-download"></i>
+                  </a>
+                </div>
+              </figcaption>
             </figure>
           </li>
         </ul>
