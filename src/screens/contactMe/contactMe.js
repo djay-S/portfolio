@@ -72,7 +72,7 @@ export default function ContactMe() {
                       handleExternalLink(PDF);
                     }}
                   >
-                    <i class="far fa-eye"></i>
+                    <i class="fas fa-eye"></i>
                   </i>
                   <a href={PDF} download="Dhananjay Singh Kushwaha.pdf">
                     <i class="fas fa-file-download"></i>
