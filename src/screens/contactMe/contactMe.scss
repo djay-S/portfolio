@@ -22,7 +22,7 @@
     display: inline-grid;
 
     figcaption {
-      font-size: 1em;
+      font-size: 2em;
       opacity: 0;
     }
 
@@ -35,12 +35,12 @@
   .far,
   .fab {
     // color: red;
-    font-size: 5em;
+    font-size: 7em;
     // margin-left: 1em;
 
     transition: all 0.2s ease-in-out;
     &:hover {
-      font-size: 7em;
+      font-size: 10em;
     }
   }
   #resume-caption {
