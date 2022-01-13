@@ -31,7 +31,7 @@ export default function project(props) {
         </div>
         <span className="vertical"></span>
         <div className="details">
-          Details {props.details}
+          Details {props.details} <br/>
           <TechStack tech={props.techStack} />
         </div>
       </div>
