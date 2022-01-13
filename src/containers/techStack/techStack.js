@@ -4,13 +4,17 @@ import "./techStack.scss";
 export default function techStack(props) {
   let techs = props.tech;
   const imgPath = "/images/";
-  console.log(techs);
+  console.log("Techstack", techs);
   return (
     <div className="techStack">
       {techs.map((tech) => {
         return (
-          <figure>
-            <img src={`${imgPath}${tech}.svg`} height="50px" />
+          <figure key={tech}>
+            <img
+              src={`${imgPath}${tech}.svg`}
+              height="50px"
+              alt={tech}
+            />
             <figcaption>
               {tech[0].toUpperCase() + tech.substr(1).toLowerCase()}
             </figcaption>

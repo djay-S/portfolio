@@ -15,7 +15,7 @@ const Sidenav = () => {
   
   const a = active ? "is_shown" : "is_hidden";
   const menuState = active ? "close" : "open";
-  const menuClass = "menu " + menuState;
+  // const menuClass = "menu " + menuState;
   let id = a;
   return (
     <div className="sidenav" id={id}>

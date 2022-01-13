@@ -11,8 +11,20 @@ export default function projects() {
       </div>
       <div className="content">
         {/* <LoremIpsum p={2} /> */}
-        <Project />
-        <Project />
+        <Project
+          projectName={"Minesweeper Game"}
+          techStack={["html5", "javascript", "react", "css3"]}
+          site={"https://djay-minesweeper.netlify.app/"}
+          gitUrl={"https://github.com/djay-S/minesweeper"}
+          details={<LoremIpsum p={2} />}
+        />
+        <Project
+          projectName={"Meme Generator"}
+          techStack={["html5", "javascript", "react", "css3"]}
+          site={"https://djay-memegenerator.netlify.app/"}
+          gitUrl={"https://github.com/djay-S/memeGenerator"}
+          details={<LoremIpsum p={2} />}
+        />
       </div>
     </div>
   );
