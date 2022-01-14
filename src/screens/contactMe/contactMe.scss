@@ -24,11 +24,14 @@
     figcaption {
       font-size: 2em;
       opacity: 0;
+      transform: translateY(-0.2em);
+      transition: all 0.2s ease-in-out;
     }
 
     &:hover {
       figcaption {
         opacity: 1;
+        transform: translateY(0);
       }
     }
   }
@@ -44,7 +47,6 @@
     }
   }
   #resume-caption {
-    // background-color: red;
     cursor: pointer;
     a {
       text-emphasis: none;
