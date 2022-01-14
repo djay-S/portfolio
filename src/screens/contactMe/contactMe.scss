@@ -1,19 +1,23 @@
 @import "../../mixins/mixins.scss";
-// @import url('https://css.gg/mail.css');
-// @import url('https://css.gg/software-download.css');
 @import url("https://use.fontawesome.com/releases/v5.15.0/css/all.css");
 
 .contact_me {
   @include element_middle();
 
   .contacts {
+    @include element_middle();
     font-size: 1.5em;
+    width: 100%;
     ul {
       list-style-type: none;
       padding: 0;
+      height: 5em;
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      justify-items: center;
       li {
-        display: inline;
-        margin-left: 2em;
+        width: min-content;
       }
     }
   }

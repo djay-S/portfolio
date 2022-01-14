@@ -11,7 +11,7 @@ export default function ContactMe() {
       <div className="heading">
         <h1>Contact Me</h1>
       </div>
-      <div className="content contacts">
+      <div className="contacts">
         <ul>
           <li>
             {/* Email */}
