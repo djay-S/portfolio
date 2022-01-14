@@ -17,7 +17,10 @@ export default function project(props) {
       </div>
       <div className="project_content">
         <div className="snapshot">
-          <img src={logo} alt="screenshots from the project" />
+          <img
+            src={process.env.PUBLIC_URL + "/" + props.img}
+            alt="screenshots from the project"
+          />
           <div className="links">
             <button onClick={() => handleExternalSiteClick(props.site)}>
               <span className="btn-text">Site &nbsp;</span>
@@ -31,7 +34,9 @@ export default function project(props) {
         </div>
         <span className="vertical"></span>
         <div className="details">
-          Details {props.details} <br/>
+          Details
+          <div dangerouslySetInnerHTML={{ __html: props.details }} />
+          <br />
           <TechStack tech={props.techStack} />
         </div>
       </div>

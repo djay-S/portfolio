@@ -16,14 +16,16 @@ export default function projects() {
           techStack={["html5", "javascript", "react", "css3"]}
           site={"https://djay-minesweeper.netlify.app/"}
           gitUrl={"https://github.com/djay-S/minesweeper"}
-          details={<LoremIpsum p={2} />}
+          img={"mineSweeper-1.png"}
+          details={"<p>The classic Single Player game of Minesweeper</p>"}
         />
         <Project
           projectName={"Meme Generator"}
           techStack={["html5", "javascript", "react", "css3"]}
           site={"https://djay-memegenerator.netlify.app/"}
           gitUrl={"https://github.com/djay-S/memeGenerator"}
-          details={<LoremIpsum p={2} />}
+          img={"memeGen-1.png"}
+          details={"<p>Custom Meme Maker</p>"}
         />
       </div>
     </div>

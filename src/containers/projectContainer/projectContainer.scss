@@ -15,6 +15,7 @@
   position: relative;
   padding: 1em;
   margin: 1em;
+  border-radius: 5px;
 }
 
 .project_name {
@@ -31,7 +32,8 @@
   flex-direction: column;
   width: 100%;
   img {
-    width: 40%;
+    width: 100%;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -127,6 +129,9 @@ button:hover {
     width: 9em;
     border: none;
     background-color: hsl(0, 0%, 90%);
+    .btn-text {
+      padding: 0;
+    }
     .gg-external {
       display: none;
     }

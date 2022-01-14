@@ -2,5 +2,8 @@
 
 .about_me {
   @include element_middle();
-//   background-color: teal;
+  //   background-color: teal;
+  .me {
+    padding: 1em;
+  }
 }

@@ -36,7 +36,7 @@ export default function ContactMe() {
                 className="fab fa-linkedin"
                 onClick={() =>
                   handleExternalLink(
-                    "https://www.linkedin.com/in/dhananjay- singh-6b52621a7"
+                    "https://www.linkedin.com/in/dhananjay-singh-6b52621a7"
                   )
                 }
               ></i>

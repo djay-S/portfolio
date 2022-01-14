@@ -8,7 +8,7 @@ export default function about_me() {
       <div className="heading">
         <h1>About Me</h1>
       </div>
-      <div className="content">
+      <div className="me">
         <LoremIpsum p={2} />
       </div>
     </div>
