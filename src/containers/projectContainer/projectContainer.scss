@@ -104,3 +104,26 @@ button:hover {
 .button::before {
   transition: all 0.5s;
 }
+
+@media screen and (max-width: 1200px) {
+  .project {
+    --bg-color: whitesmoke;
+    background-color: var(--bg-color);
+    // @include element_middle();
+  }
+
+  .project_content {
+    display: block;
+  }
+  .vertical {
+    display: none;
+  }
+
+  .links {
+    column-gap: 1ch;
+  }
+
+  button {
+    border: none;
+  }
+}
