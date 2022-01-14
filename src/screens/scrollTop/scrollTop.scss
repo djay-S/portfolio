@@ -1,0 +1,72 @@
+@import "../../mixins/mixins.scss";
+
+.scroll-top {
+  @include element_middle();
+  background-color: white;
+  position: fixed;
+  //   border: 1px solid black;
+  box-shadow: 0px 0px 100px 10px grey;
+  width: 50px;
+  aspect-ratio: 1;
+  bottom: 1em;
+  right: 1em;
+  z-index: 10000;
+}
+
+.line {
+  display: block;
+  position: relative;
+  height: 2em;
+}
+.line,
+.line::after,
+.line::before {
+  width: 4px;
+  background: black;
+  border-radius: 4px;
+}
+.line::after,
+.line::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  height: 1.5em;
+}
+.line::after {
+  transform-origin: left;
+  left: 0.5em;
+  transform: translate(-0em, -0.2em) rotate(-45deg);
+}
+.line::before {
+  transform-origin: right;
+  right: 0.5em;
+  transform: translate(0em, -0.2em) rotate(45deg);
+}
+
+.scroll-top:hover {
+  animation: up 1s linear infinite;
+}
+.scroll-top:active {
+  animation: shoot-up 1s ease-out 0.09s forwards;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes shoot-up {
+  0% {
+  }
+
+  100% {
+    transform: translateY(-50vh);
+  }
+}

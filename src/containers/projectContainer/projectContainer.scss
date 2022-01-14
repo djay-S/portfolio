@@ -1,0 +1,106 @@
+@import "../../mixins/mixins.scss";
+@import url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
+@import url("https://css.gg/external.css");
+:root {
+  --bg-color: white;
+  --ggs: 0.8;
+}
+
+.project {
+  @include element_middle();
+  flex-direction: column;
+  outline: 1px solid black;
+  width: 80vw;
+  height: 100%;
+  position: relative;
+  padding: 1em;
+  margin: 1em;
+}
+
+.project_name {
+}
+
+.project_content {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 2em 1fr;
+}
+
+.snapshot {
+  @include element_middle();
+  flex-direction: column;
+  width: 100%;
+  img {
+    width: 40%;
+  }
+}
+
+.links {
+  width: 80%;
+  height: 3em;
+  // border: 1px solid red;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  column-gap: 2em;
+}
+
+button {
+  background-color: var(--bg-color);
+  .btn-text {
+    color: white;
+    padding-left: 1em;
+    mix-blend-mode: difference;
+    transition: all 0.1s ease-out;
+  }
+  border: 1px solid black;
+  font-size: 1em;
+  padding: 0.5em;
+  position: relative;
+  height: 3em;
+  width: 10em;
+}
+
+button::before {
+  content: "";
+  inset: 0;
+  width: 0%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+button:hover {
+  .btn-text {
+    font-size: 1.15em;
+  }
+
+  &::before {
+    content: "";
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+  }
+}
+
+.gg-external {
+  display: inline-block;
+  color: var(--bg-color);
+}
+
+.vertical {
+  border-left: 1px solid black;
+  margin: 1em;
+}
+
+.details {
+  width: 100%;
+}
+
+.button,
+.button::after,
+.button::before {
+  transition: all 0.5s;
+}

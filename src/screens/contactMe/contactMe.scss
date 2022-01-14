@@ -1,0 +1,63 @@
+@import "../../mixins/mixins.scss";
+// @import url('https://css.gg/mail.css');
+// @import url('https://css.gg/software-download.css');
+@import url("https://use.fontawesome.com/releases/v5.15.0/css/all.css");
+
+.contact_me {
+  @include element_middle();
+
+  .contacts {
+    font-size: 1.5em;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        display: inline;
+        margin-left: 2em;
+      }
+    }
+  }
+
+  figure {
+    display: inline-grid;
+
+    figcaption {
+      font-size: 2em;
+      opacity: 0;
+      transform: translateY(-0.2em);
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+      figcaption {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  .far,
+  .fab {
+    // color: red;
+    font-size: 7em;
+    // margin-left: 1em;
+
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      font-size: 10em;
+    }
+  }
+  #resume-caption {
+    cursor: pointer;
+    a {
+      text-emphasis: none;
+      text-decoration: none;
+      margin-left: 1em;
+      color: black;
+    }
+    @include element_middle();
+    font-size: 1em;
+    .far {
+      font-size: 1em;
+    }
+  }
+}

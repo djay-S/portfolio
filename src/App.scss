@@ -1,0 +1,10 @@
+@mixin element_middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  @include element_middle;
+  flex-direction: column;
+}

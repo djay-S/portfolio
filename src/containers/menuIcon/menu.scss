@@ -1,0 +1,91 @@
+.box {
+  // border: 1px solid black;
+  box-shadow: 0px 0px 100px 10px grey;
+  background: white;
+  aspect-ratio: 1;
+  width: 80%;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  // background-color: hsl(0, 0, 80);
+}
+
+.manu-bar {
+  display: block;
+  position: relative;
+}
+
+.manu-bar,
+.manu-bar::before,
+.manu-bar::after {
+  padding: 0;
+  width: 2em;
+  height: 4px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+}
+
+.manu-bar::before,
+.manu-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.manu-bar::before {
+  bottom: 0.5em;
+}
+
+.manu-bar::after {
+  top: 0.5em;
+}
+
+.point {
+  .manu-bar {
+    width: 2.5em;
+  }
+
+  .manu-bar::before {
+    transform-origin: left;
+    transform: translate(0em, 0.6em) rotate(-45deg);
+    width: 1.5em;
+  }
+
+  .manu-bar::after {
+    transform-origin: left;
+    transform: translate(0em, -0.6em) rotate(45deg);
+    width: 1.5em;
+  }
+}
+
+.close {
+  .manu-bar {
+    width: 2.5em;
+  }
+
+  .manu-bar::after {
+    transform-origin: right;
+    transform: translate(1em, -0.4em) rotate(45deg);
+    width: 1.5em;
+  }
+
+  .manu-bar::before {
+    transform-origin: right;
+    transform: translate(1em, 0.4em) rotate(-45deg);
+    width: 1.5em;
+  }
+}
+
+.menu {
+  position: relative;
+  // background-color: white;
+  width: 50px;
+  aspect-ratio: 1;
+  padding: 5px;
+  border-radius: 5px;
+}

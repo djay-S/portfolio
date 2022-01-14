@@ -1,0 +1,13 @@
+@import "../../mixins/mixins.scss";
+
+.projects {
+  @include element_middle();
+  flex-direction: column;
+}
+
+.content {
+  @include element_middle();
+  flex-direction: column;
+  position: relative;
+  margin-top: 5em;
+}
