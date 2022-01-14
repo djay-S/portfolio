@@ -22,7 +22,8 @@
 
 .project_content {
   margin-top: 1em;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2em 1fr;
 }
 
 .snapshot {
