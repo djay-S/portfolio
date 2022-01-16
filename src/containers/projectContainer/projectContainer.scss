@@ -97,8 +97,16 @@ button:hover {
   margin: 1em;
 }
 
+hr {
+  width: 1px;
+  height: initial;
+  background-color: black;
+  border: 0;
+}
+
 .details {
   width: 100%;
+  transform: translateY(-1.5em);
 }
 
 .button,
@@ -121,8 +129,19 @@ button:hover {
     display: none;
   }
 
+  hr {
+    height: 1px;
+    width: initial;
+    background-color: black;
+    border: 0;
+  }
+
   .links {
     column-gap: 1ch;
+  }
+
+  .details {
+    transform: translateY(0);
   }
 
   button {

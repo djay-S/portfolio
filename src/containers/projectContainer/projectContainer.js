@@ -32,9 +32,9 @@ export default function project(props) {
             </button>
           </div>
         </div>
-        <span className="vertical"></span>
+        <hr />
         <div className="details">
-          Details
+          {/* Details */}
           <div dangerouslySetInnerHTML={{ __html: props.details }} />
           <br />
           <TechStack tech={props.techStack} />
