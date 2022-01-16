@@ -1,9 +1,6 @@
 import React from "react";
 import "./projectContainer.scss";
-import logo from "../../assets/images/logo512.png";
-// import { LoremIpsum } from "react-lorem-ipsum";
 import TechStack from "../techStack/techStack";
-// import * as Constants from "../../constants/textConstants";
 
 export default function project(props) {
   const handleExternalSiteClick = (url) => {
@@ -35,7 +32,10 @@ export default function project(props) {
         <hr />
         <div className="details">
           {/* Details */}
-          <div dangerouslySetInnerHTML={{ __html: props.details }} />
+          <div
+            dangerouslySetInnerHTML={{ __html: props.details }}
+            className="contents"
+          />
           <br />
           <TechStack tech={props.techStack} />
         </div>

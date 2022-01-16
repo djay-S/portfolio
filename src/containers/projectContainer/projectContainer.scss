@@ -18,9 +18,6 @@
   border-radius: 5px;
 }
 
-.project_name {
-}
-
 .project_content {
   margin-top: 1em;
   display: grid;
@@ -106,7 +103,13 @@ hr {
 
 .details {
   width: 100%;
-  transform: translateY(-1.5em);
+  display: grid;
+  align-content: space-between;
+  .contents {
+    h4 {
+      margin: 0;
+    }
+  }
 }
 
 .button,

@@ -18,7 +18,7 @@ export default function projects() {
           gitUrl={"https://github.com/djay-S/minesweeper"}
           img={"mineSweeper-1.png"}
           details={`
-          <p><h4>The classic Single Player game of Minesweeper</h4></p>
+          <h4>The classic Single Player game of Minesweeper</h4>
           <p>Salient Features
             <ul>
               <li>Responsive layout</li>
@@ -35,7 +35,7 @@ export default function projects() {
           gitUrl={"https://github.com/djay-S/memeGenerator"}
           img={"memeGen-1.png"}
           details={`
-          <p><h4>Custom Meme Maker</h4></p>
+          <h4>Custom Meme Maker</h4>
           <p>Salient Features
             <ul>
               <li>Masonry like Responsive UI layout</li>
