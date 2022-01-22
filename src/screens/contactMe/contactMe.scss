@@ -51,6 +51,8 @@
     }
   }
   #resume-caption {
+    @include element_middle();
+    flex-direction: row;
     cursor: pointer;
     a {
       text-emphasis: none;
@@ -58,10 +60,50 @@
       margin-left: 1em;
       color: black;
     }
-    @include element_middle();
     font-size: 1em;
     .far {
       font-size: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_me {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    .heading {
+      position: relative;
+    }
+    .contacts {
+      border: 1px solid red;
+      ul {
+        grid-template-columns: none;
+        justify-items: flex-start;
+        li {
+          width: 100%;
+          padding: 0.3em;
+          figure {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            justify-items: start;
+            align-items: center;
+            i {
+              margin: 0 auto;
+            }
+            figcaption {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .far,
+    .fab {
+      &:hover {
+        font-size: 7em;
+      }
     }
   }
 }
