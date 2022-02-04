@@ -5,5 +5,122 @@
   //   background-color: teal;
   .me {
     padding: 1em;
+    width: 80vw;
+  }
+
+  .me_content {
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1em;
+    .block {
+      // border: 1px solid black;
+      padding: 1em;
+      margin: 1em;
+    }
+  }
+
+  .skills {
+    @include element_middle();
+    width: 85vw;
+    overflow-x: scroll;
+    border: none;
+    .techs {
+      display: flex;
+      justify-content: center;
+      overflow-x: scroll;
+      width: 100%;
+      padding: 3em;
+      .tech {
+        font-size: 0.8em;
+        width: 150px;
+        // min-height: 200px;
+        aspect-ratio: 0.7;
+        line-height: 1.7;
+        // outline: 1px solid black;
+        border-radius: 10px;
+        box-shadow: -2em 0 2.5em black;
+        background-color: white;
+        display: grid;
+        padding: 1em;
+        transition: all 0.2s linear;
+        grid-template-areas:
+          "pic name"
+          "exp exp"
+          "stat stat"
+          "stat stat";
+        grid-template-rows: 60px 2em 1fr;
+        grid-template-columns: 1fr 1fr;
+
+        img {
+          grid-area: pic;
+        }
+        .tech_name {
+          grid-area: name;
+        }
+        .exp {
+          grid-area: exp;
+        }
+        .stat {
+          grid-area: stat;
+          .topic {
+            display: inline-block;
+            background-color: teal;
+            color: white;
+            width: max-content;
+            padding: 0.2em 0.3em;
+            margin: 0 0.1em 0.25em;
+            border-radius: 5px;
+          }
+        }
+      }
+      .tech:not(:first-child) {
+        margin-left: -40px;
+      }
+      .tech:hover {
+        transform: translateY(-10px) scale(1.2);
+      }
+      .tech:hover ~ .tech {
+        transform: translateX(60px);
+      }
+      .tech:first-child:hover {
+        transform: translateX(0.5em) translateY(-10px) scale(1.2);
+      }
+    }
+
+    img {
+      height: 50px;
+    }
+  }
+
+  .work_exps {
+    @include element_middle();
+  }
+
+  .certifications {
+    @include element_middle();
+    // margin: 2em  ;
+  }
+
+  .education {
+    @include element_middle();
+  }
+}
+
+@keyframes magnify {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes widen {
+  0% {
+    width: initial;
+  }
+  100% {
+    width: 100%;
   }
 }

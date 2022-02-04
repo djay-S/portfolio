@@ -1,5 +1,5 @@
 import React from "react";
-import { LoremIpsum } from "react-lorem-ipsum";
+// import { LoremIpsum } from "react-lorem-ipsum";
 import Project from "../../containers/projectContainer/projectContainer";
 import "./projects.scss";
 
