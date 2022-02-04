@@ -1,5 +1,11 @@
 @import "./mixins/mixins.scss";
 
+:root {
+  --bg-color: white;
+  --ggs: 0.8;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }

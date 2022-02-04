@@ -1,9 +1,6 @@
 import React from "react";
 import "./projectContainer.scss";
-import logo from "../../assets/images/logo512.png";
-// import { LoremIpsum } from "react-lorem-ipsum";
 import TechStack from "../techStack/techStack";
-// import * as Constants from "../../constants/textConstants";
 
 export default function project(props) {
   const handleExternalSiteClick = (url) => {
@@ -17,7 +14,10 @@ export default function project(props) {
       </div>
       <div className="project_content">
         <div className="snapshot">
-          <img src={logo} alt="screenshots from the project" />
+          <img
+            src={process.env.PUBLIC_URL + "/" + props.img}
+            alt="screenshots from the project"
+          />
           <div className="links">
             <button onClick={() => handleExternalSiteClick(props.site)}>
               <span className="btn-text">Site &nbsp;</span>
@@ -29,9 +29,14 @@ export default function project(props) {
             </button>
           </div>
         </div>
-        <span className="vertical"></span>
+        <hr />
         <div className="details">
-          Details {props.details} <br/>
+          {/* Details */}
+          <div
+            dangerouslySetInnerHTML={{ __html: props.details }}
+            className="contents"
+          />
+          <br />
           <TechStack tech={props.techStack} />
         </div>
       </div>

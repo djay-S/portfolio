@@ -52,3 +52,14 @@
     left: 0.5em;
   }
 }
+
+.sidenav_remaining {
+  @include element_middle();
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  // background-color: var(--colo);
+  #is_hidden {
+    display: none;
+  }
+}
