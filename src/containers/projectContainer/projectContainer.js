@@ -6,7 +6,7 @@ export default function project(props) {
   const handleExternalSiteClick = (url) => {
     window.open(url, "blank");
   };
-  console.log("projectContainer props", props);
+  // console.log("projectContainer props", props);
   return (
     <div className="project">
       <div className="project_name">

@@ -1,5 +1,4 @@
 import React from "react";
-import Techstack from "../../containers/techStack/techStack";
 
 const skills = () => {
   const skills = [
@@ -21,8 +20,8 @@ const skills = () => {
     ["oracleSql", "2years", "Views, Triggers"],
     ["mongodb", "1year", ""],
   ];
-  console.log("skills", skills);
-  console.log(skills[0][2].split(", "));
+  // console.log("skills", skills);
+  // console.log(skills[0][2].split(", "));
   const imgPath = "/images/";
   return (
     <div className="skills me_content block">
