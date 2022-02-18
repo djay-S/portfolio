@@ -33,9 +33,9 @@
       padding: 3em;
       .tech {
         font-size: 0.8em;
-        width: 150px;
-        // min-height: 200px;
-        aspect-ratio: 0.7;
+        width: 200px;
+        min-height: 240px;
+        aspect-ratio: 0.667;
         line-height: 1.7;
         // outline: 1px solid black;
         border-radius: 10px;
@@ -100,6 +100,29 @@
   .certifications {
     @include element_middle();
     // margin: 2em  ;
+    width: 70vw;
+    .contents {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .block {
+        min-width: 300px;
+        width: 40%;
+        box-shadow: 1em 1.4em 2em 1em grey;
+        border-radius: 10px;
+        margin: 2em;
+        min-height: 7em;
+        height: 150px;
+        cursor: default;
+        .gg-external {
+          color: black;
+          margin-left: 1em;
+        }
+      }
+    }
   }
 
   .education {

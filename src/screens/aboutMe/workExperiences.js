@@ -10,6 +10,8 @@ const workExperience = () => {
           designation={"Project Engineer"}
           company={"Wipro Technologies"}
           location={"Chennai"}
+          fromDate={"01-08-2018"}
+          toDate={""}
           details={`
           <ul>
           <li>Worked on development of an online portal for Sellers to report their sales and claim back-margin rebates, and for Admins to manages sellers and claims.</li>

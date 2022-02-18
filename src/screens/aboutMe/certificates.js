@@ -14,6 +14,7 @@ const certificates = () => {
           url={
             "https://udemy-certificate.s3.amazonaws.com/pdf/UC-f8abb324-4b76-4ec2-be42-307cdfb8de44.pdf"
           }
+          year={"2021"}
         />
         <Certification
           title={"JavaScript Es6"}
@@ -21,6 +22,7 @@ const certificates = () => {
           url={
             "https://udemy-certificate.s3.amazonaws.com/pdf/UC-f8abb324-4b76-4ec2-be42-307cdfb8de44.pdf"
           }
+          year={"2021"}
         />
         <Certification
           title={"MongoDB - The Complete Developer's Guide"}
@@ -28,6 +30,7 @@ const certificates = () => {
           url={
             "https://udemy-certificate.s3.amazonaws.com/pdf/UC-f8abb324-4b76-4ec2-be42-307cdfb8de44.pdf"
           }
+          year={"2021"}
         />
         {/* Can also include flip-book type style alternating left & right the placement of the text and the pic */}
       </div>

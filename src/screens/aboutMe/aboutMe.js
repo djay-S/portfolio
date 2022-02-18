@@ -1,5 +1,5 @@
 import React from "react";
-import { LoremIpsum } from "react-lorem-ipsum";
+// import { LoremIpsum } from "react-lorem-ipsum";
 import WorkExperience from "./workExperiences";
 import Certifications from "./certificates";
 import Skills from "./skills";
