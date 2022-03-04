@@ -95,6 +95,36 @@
 
   .work_exps {
     @include element_middle();
+
+    .contents {
+      padding-right: 1em;
+    }
+
+    .work_exp {
+      position: relative;
+      border-left: 1px solid grey;
+      border-top: 1px solid grey;
+      list-style-type: none;
+      padding-left: 1em;
+      margin: 2em 0;
+
+      ul {
+        list-style-type: none;
+      }
+    }
+
+    .work_exp::before {
+      content: attr(datatype);
+      position: absolute;
+      top: -0.5em;
+      left: -1.5em;
+      background-color: white;
+      border: 1px solid grey;
+      border-radius: 1em;
+      text-align: center;
+      line-height: 1em;
+      padding: 0 0.2em;
+    }
   }
 
   .certifications {

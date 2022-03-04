@@ -2,16 +2,17 @@ import React from "react";
 // import { LoremIpsum } from "react-lorem-ipsum";
 
 const workExp = (props) => {
+  const imgPath = "/images/";
   return (
-    <div className="work_exp block">
-      <h3>{props.designation}</h3>
-      <h4>
-        <i className="far fa-building"></i>
-        {props.company}
-      </h4>
-      <h5>Location:{props.location}</h5>
-      <div dangerouslySetInnerHTML={{ __html: props.details }} />
-    </div>
+    <li className="work_exp" datatype="2019">
+      <h3 className="company">{props.company}</h3>
+      <h4 className="designation">{props.designation}</h4>
+      <h5 className="location">{props.location}</h5>
+      <span
+        className="notes"
+        dangerouslySetInnerHTML={{ __html: props.details }}
+      />
+    </li>
   );
 };
 
