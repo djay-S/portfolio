@@ -20,7 +20,7 @@ export default function about_me() {
         <Skills />
         <WorkExperience />
         <Certifications />
-        <Education />
+        {/* <Education /> */}
       </div>
     </div>
   );

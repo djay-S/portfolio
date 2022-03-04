@@ -1,5 +1,6 @@
 import React from "react";
 import WorkExperience from "../../containers/aboutMe/workExperienceContainer";
+import Education from "../../containers/aboutMe/educationContainer";
 
 const workExperience = () => {
   return (
@@ -11,8 +12,8 @@ const workExperience = () => {
           company={"Wipro Technologies"}
           location={"Chennai"}
           image={"wipro.png"}
-          fromDate={"01-08-2018"}
-          toDate={""}
+          fromDate={new Date(2018, 8, 23)}
+          toDate={new Date()}
           details={`
           <ul>
           <li>Worked on development of an online portal for Sellers to report their sales and claim back-margin rebates, and for Admins to manages sellers and claims.</li>
@@ -28,8 +29,8 @@ const workExperience = () => {
           company={"Wipro Technologies"}
           location={"Chennai"}
           image={"wipro.png"}
-          fromDate={"01-08-2018"}
-          toDate={""}
+          fromDate={new Date(2018, 8, 23)}
+          toDate={new Date(2019, 8, 1)}
           details={`
           <ul>
           <li>Worked on development of an online portal for Sellers to report their sales and claim back-margin rebates, and for Admins to manages sellers and claims.</li>
@@ -39,6 +40,15 @@ const workExperience = () => {
           <li>Received 'Inspiring Performance Badge' from my manager as a token of appreciation.</li>
           </ul>
           `}
+        />
+        <Education
+          college={"Vellore Institute of Technology"}
+          branch={"B.tech in Mechanical Engineering, July 2014 - June 2018"}
+          cgpa={"CGPA: 8.81"}
+          image={"wipro.png"}
+          fromDate={new Date(2014, 6, 1)}
+          toDate={new Date(2018, 4, 31)}
+          details={""}
         />
         {/* Can also add a timeline like feel by adding a span on the side giving the time period of the experience
             Can also include education under this with a different section name (History) */}

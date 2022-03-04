@@ -123,7 +123,30 @@
       border-radius: 1em;
       text-align: center;
       line-height: 1em;
-      padding: 0 0.2em;
+      padding: 0 0.3em;
+    }
+
+    .educatio {
+      position: relative;
+      border-left: 1px solid grey;
+      border-top: 1px solid grey;
+      list-style-type: none;
+      padding-left: 1em;
+      margin: 2em 0;
+    }
+
+    .educatio::before {
+      position: absolute;
+      content: "\f19d";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      top: -0.75em;
+      left: -1em;
+      background-color: white;
+      border: 1px solid grey;
+      border-radius: 50%;
+      aspect-ratio: 1;
+      padding: 0.3em;
     }
   }
 
@@ -157,6 +180,11 @@
 
   .education {
     @include element_middle();
+    h4,
+    h5,
+    h6 {
+      margin: 0 1em 1em;
+    }
   }
 }
 
