@@ -1,0 +1,47 @@
+[
+  {
+    "techName": "java",
+    "exp": "2 years",
+    "topics": "Core Java, OOPS, Java 8, Multithreading, Collection Framework"
+  },
+  {
+    "techName": "javascript",
+    "exp": "2 years",
+    "topics": ""
+  },
+  {
+    "techName": "react",
+    "exp": "2 years",
+    "topics": "Class Components, Functional Components, React Router, React Hooks"
+  },
+  {
+    "techName": "redux",
+    "exp": "1 year",
+    "topics": ""
+  },
+  {
+    "techName": "html5",
+    "exp": "2 years",
+    "topics": ""
+  },
+  {
+    "techName": "css3",
+    "exp": "2 years",
+    "topics": "CSS Selectors, Box-Model, Flex-box, Grid"
+  },
+  {
+    "techName": "spring",
+    "exp": "2 years",
+    "topics": "Spring-Boot, Web Services, Microservices, JDBC"
+  },
+  {
+    "techName": "oracleSql",
+    "exp": "2 years",
+    "topics": "Views, Triggers"
+  },
+  {
+    "techName": "mongodb",
+    "exp": "1 year",
+    "topics": ""
+  }
+]
