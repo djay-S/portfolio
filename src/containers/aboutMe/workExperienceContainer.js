@@ -33,7 +33,8 @@ const workExp = (props) => {
     <li className="work_exp" datatype={getDisplayYear()}>
       <h3 className="company">{props.company}</h3>
       <h4 className="designation">
-        {props.designation}, {getExperience()}
+        {props.designation},{" "}
+        <span className="experience">{getExperience()}</span>
       </h4>
       <h5 className="location">{props.location}</h5>
       <span

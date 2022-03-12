@@ -60,9 +60,9 @@ const workExperience = () => {
         />
         <Education
           college={"Vellore Institute of Technology"}
-          branch={"B.tech in Mechanical Engineering, July 2014 - June 2018"}
+          branch={"B.tech in Mechanical Engineering"}
+          duration={"July 2014 - June 2018"}
           cgpa={"CGPA: 8.81"}
-          image={"wipro.png"}
           fromDate={new Date(2014, 6, 1)}
           toDate={new Date(2018, 4, 31)}
           details={""}
