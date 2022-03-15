@@ -13,10 +13,13 @@ export default function about_me() {
         <h1>About Me</h1>
       </div>
       <div className="me content">
-        I am seeking a position to utilise my skills and abilities that offers
-        professional growth while being resourceful, innovative and flexible. I
-        believe in team-work and I am open to learn new technologies that would
-        help me in my growth as well as in the growth of the company as a whole.
+        <text className="summary">
+          I am seeking a position to utilise my skills and abilities that offers
+          professional growth while being resourceful, innovative and flexible.
+          I believe in team-work and I am open to learn new technologies that
+          would help me in my growth as well as in the growth of the company as
+          a whole.
+        </text>
         <Skills />
         <WorkExperience />
         <Certifications />

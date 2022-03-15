@@ -2,12 +2,10 @@
 @import url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
 @import url("https://css.gg/external.css");
 
-
 .project {
   @include element_middle();
   flex-direction: column;
   outline: 1px solid black;
-  width: 70vw;
   height: 100%;
   position: relative;
   padding: 1em;
@@ -120,6 +118,7 @@ hr {
   .project {
     --bg-color: whitesmoke;
     background-color: var(--bg-color);
+    width: auto;
     // @include element_middle();
   }
 
